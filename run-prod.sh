@@ -1,1 +1,1 @@
-PORT=80 node app.js
+PORT=80 nohup node app.js &
