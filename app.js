@@ -13,7 +13,7 @@ const livePlaylistPath = './segments/index.m3u8';
 const validTokens = ['elphin', 'elphintvapp', 'bradley','ipad'];
 
 const windowSize = 10; // Number of segments to keep in the live playlist
-const segmentDuration = 6; // Duration of each segment in seconds
+const segmentDuration = 6; // Duration of each segment in seconds. This must match the segment length that you have pre-generated
 let segments = [];
 let mediaSequence = 0;
 
