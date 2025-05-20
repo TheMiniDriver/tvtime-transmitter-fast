@@ -53,10 +53,12 @@ function serverStartup(){
 }
 
 function updateLivePlaylist() {
-  const fullHlsSegments = fs.readFileSync(fullHlsPlaylist, 'utf-8');
+  let fullHlsSegments = fs.readFileSync(fullHlsPlaylist, 'utf-8');
   segments = fullHlsSegments.split('\n').filter(line => line.endsWith('.ts'));
 
   function writeLivePlaylist(startIndex) {
+    fullHlsSegments = fs.readFileSync(fullHlsPlaylist, 'utf-8');
+    segments = fullHlsSegments.split('\n').filter(line => line.endsWith('.ts'));
     let livePlaylist = '#EXTM3U\n';
     livePlaylist += '#EXT-X-VERSION:3\n';
     livePlaylist += `#EXT-X-TARGETDURATION:${segmentDuration}\n`;
