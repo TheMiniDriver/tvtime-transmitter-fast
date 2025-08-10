@@ -7,8 +7,20 @@ require('dotenv').config(); // Add this line
 // Display startup banner with ASCII art and version
 function displayStartupBanner() {
   const packageInfo = require('./package.json');
-  console.log('\n======================================');
-  console.log('          TV TIME TRANSMITTER         ');
+  console.log('\n');
+  console.log('████████╗██╗   ██╗    ████████╗██╗███╗   ███╗███████╗');
+  console.log('╚══██╔══╝██║   ██║    ╚══██╔══╝██║████╗ ████║██╔════╝');
+  console.log('   ██║   ██║   ██║       ██║   ██║██╔████╔██║█████╗  ');
+  console.log('   ██║   ╚██╗ ██╔╝       ██║   ██║██║╚██╔╝██║██╔══╝  ');
+  console.log('   ██║    ╚████╔╝        ██║   ██║██║ ╚═╝ ██║███████╗');
+  console.log('   ╚═╝     ╚═══╝         ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝');
+  console.log('                    ████████╗██╗  ██╗                 ');
+  console.log('                    ╚══██╔══╝╚██╗██╔╝                 ');
+  console.log('                       ██║    ╚███╔╝                  ');
+  console.log('                       ██║    ██╔██╗                  ');
+  console.log('                       ██║   ██╔╝ ██╗                 ');
+  console.log('                       ╚═╝   ╚═╝  ╚═╝                 ');
+  console.log('');
   console.log('======================================');
   console.log(`Version: ${packageInfo.version}`);
   console.log('======================================\n');
